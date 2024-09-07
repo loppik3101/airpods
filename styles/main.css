@@ -1,0 +1,381 @@
+@import url("fonts.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151515;
+  color: #ffffff;
+  font-family: "Montserrat";
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background: #282828;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+  padding: 15px 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  transition: 0.15s;
+}
+
+.header__logo:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  margin-left: 30px;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar__list-link {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navbar__list-link::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(8px);
+  transition: 0.3s;
+}
+
+.navbar__list-link:hover::before {
+  width: 100%;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.header__actions-button {
+  transition: 0.15s;
+}
+
+.header__actions-button:hover {
+  opacity: 0.7;
+}
+
+.section__one {
+  min-height: calc(100vh - 87px);
+  background: url("../images/section-one-background-image.png") no-repeat center/ cover;
+  display: flex;
+  align-items: center;
+}
+
+.section__one-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+}
+
+.section__one-title {
+  font-family: "Prosto One";
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 104px;
+}
+
+.section__one-button {
+  background: #ffffff;
+  color: #171718;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 10px;
+  padding: 13px 14px;
+  transition: 0.15s;
+  text-transform: uppercase;
+}
+.header__actions-burger{
+  display: none;
+  position: relative;
+}
+.header__actions-burger input{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+}
+.section__one-button:hover {
+  opacity: 0.7;
+}
+
+.section__two {
+  background: #151515;
+  display: flex;
+  align-items: center;
+}
+
+.section__two-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section__two-text {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.82px;
+  text-align: left;
+  max-width: 540px;
+  width: 100%;
+}
+
+.section__two-img {
+  display: flex;
+  /* width: 552px;
+  height: 335px; */
+  margin-top: 30px;
+  
+}
+.section__two-img img{
+  width: 100%;
+}
+
+.section__three {
+  background: #151515;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.section__three-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__three-img {
+  display: flex;
+  /* width: 457px;
+  height: 408px; */
+  /* margin-bottom: 50px; */
+}
+
+.section__three-text {
+  font-family: "Montserrat";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.82px;
+  text-align: left;
+  max-width: 540px;
+  width: 100%;
+}
+
+.section__four-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.section__four-textOne {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: right;
+}
+.section__four-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section__four-img img{
+  width: 100%;
+}
+.section__four-img::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 1px;
+  background:  #C4C4C4;
+  left: -75px;
+  
+}
+.section__four-img::after {
+    content: "";
+    position: absolute;
+    width: 61px;
+    height: 1px;
+    background:  #C4C4C4;
+    right: -75px;
+  }
+  
+
+
+.section__four-textTwo {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+}
+.section__four-content p {
+  max-width: 333px;
+  width: 100%;
+}
+
+.section__four {
+  padding-bottom: 79px;
+}
+
+
+.section__five {
+  background: #151515;
+  display: flex;
+  align-items: center;
+}
+
+.section__five-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 55px;
+}
+
+.section__five-card {
+  background: #fff;
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.section__five-title {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: left;
+  color: #000;
+  text-align: center;
+}
+
+.section__five-text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: #000;
+  text-align: center;
+  display: flex;
+}
+
+.section__five-button {
+  background: #151515;
+  color: #fff;
+  margin-top: 10px;
+  padding: 7px 57px;
+  transition: 0.15s;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+.footer {
+  background: #282828;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+  padding: 80px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__list-item {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__list-link {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.38px;
+  text-align: right;
+}
+
+.footert__actions {
+  display: flex;
+  gap: 29px;
+}
+
+.footer__actions-button {
+  transition: 0.15s;
+}
+.footer__actions-button:hover {
+  opacity: 0.7s;
+}

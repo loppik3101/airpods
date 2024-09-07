@@ -1,0 +1,197 @@
+@media (max-width: 1145px) {
+  .section__four-img::before,
+  .section__four-img::after {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .section__four-textTwo,
+  .section__four-textOne,
+  .section__three-text,
+  .section__two-text {
+    font-size: 16px;
+  }
+
+  .section__two-img,
+  .section__two-text {
+    width: 50%;
+  }
+}
+@media (max-width: 930px) {
+  .section__two-content,
+  .section__four-content {
+    flex-direction: column;
+  }
+  .section__two-text,
+  .section__three-text,
+  .section__four-textTwo,
+  .section__four-textOne {
+    text-align: center;
+  }
+  .section__four-img {
+    max-width: 220px;
+    width: 100%;
+  }
+  .section__three-content {
+    margin-top: 60px;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 810px) {
+  .section__two-img,
+  .section__three-img img {
+    max-width: 350px;
+    width: 100%;
+    justify-content: center;
+  }
+  .section__four-img img {
+    max-width: 150px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .section__five-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section__five-card {
+    min-width: 200px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .section__one-title {
+    font-size: 80px;
+  }
+  .section__one-button {
+    font-size: 16px;
+  }
+  .navbar__list-link {
+    font-size: 18px;
+  }
+  .section__two-img,
+  .section__two-text {
+    width: 60%;
+  }
+}
+@media (max-width: 745px) {
+  .section__one {
+    background-position: center top;
+  }
+}
+@media (max-width: 610px) {
+  .footer__content {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section__two-img,
+  .section__two-text {
+    width: 80%;
+  }
+  .section__one-title {
+    font-size: 60px;
+  }
+  .section__one-button {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .navbar__list-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 490px) {
+  .section__one {
+    background-size: contain;
+  }
+  .header .navbar {
+    position: fixed;
+    z-index: 99;
+    margin-left: 0;
+    width: 100%;
+    background: black;
+    justify-content: space-between;
+    left: 0;
+    bottom: 0;
+  }
+  .navbar__list {
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 24px 0;
+  }
+  .footer {
+    padding: 25px 0 90px;
+  }
+}
+.navbar__list-item {
+  gap: 8px;
+}
+.footert__actions {
+  gap: 15px;
+}
+.footer__content {
+  gap: 10px;
+}
+@media (max-width: 445px) {
+  .section__one-title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .section__one-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .section__two-img,
+  .section__three-img img {
+    max-width: 300px;
+    width: 100%;
+    justify-content: center;
+  }
+  .section__four-img img {
+    max-width: 115px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .section__five-card {
+    min-width: 180px;
+  }
+}
+@media (max-width: 385px) {
+  .section__two-img,
+  .section__three-img img {
+    max-width: 250px;
+    width: 100%;
+    justify-content: center;
+  }
+  .section__four-img img {
+    max-width: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section__one-content {
+    gap: 20px;
+  }
+  .section__two-text,
+  .section__three-text,
+  .section__four-textOne,
+  .section__four-textTwo {
+    font-size: 12px;
+
+  }
+  .navbar{
+    margin-left: 0;
+  }
+}
+@media (max-width: 323px){
+  .footer__content{
+    gap: 10px;
+  }
+}
+
